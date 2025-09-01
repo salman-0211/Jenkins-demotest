@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                // Maven build
                 withMaven(maven: 'Maven3') {
                     bat 'mvn clean install'
                 }
