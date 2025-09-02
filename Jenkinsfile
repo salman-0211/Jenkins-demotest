@@ -15,7 +15,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'echo Running tests...'
+                withMaven(maven: 'Maven3') {
+                    bat 'mvn test'
+                }
             }
         }
         stage('Archive Artifacts') {
