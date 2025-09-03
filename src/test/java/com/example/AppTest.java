@@ -3,10 +3,10 @@ package com.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MyFirstTest {
+public class AppTest {
     @Test
-    void testSubtraction() {
-        assertEquals(0, 2 - 2, "2 - 2 should equal 0");
+    void testAddition() {
+        assertEquals(4, 2 + 2, "2 + 2 should equal 4");
     }
 }
 
